@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div id="main-nav" class="container">
+        <a href="#" class="main-header__logo">ContentApp </a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Filmler</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Diziler</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="#">Üye Girişi</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" onclick="displayMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <div class="content">
+          <h2>Hoşgeldiniz</h2>
+          <h3>Keşfedilecek yüzlerce film,dizi ve tv şovları.Şimdi keşfedin.</h3>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">Nasıl çalışır?</h2>
+            <p>
+              En sevdiğiniz filmleri ve dizileri izlemeye nasıl başlayacağınızı
+              adım adım göstereceğiz!
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="icon-box col-3">
+              <i class="fas fa-sign-in-alt fa-3x"></i>
+              <h3>Kayıt Ol</h3>
+              <p>Hemen şimdi kayıt ol.</p>
+            </div>
+            <div class="icon-box col-3">
+              <i class="fab fa-buffer fa-3x"></i>
+              <h3>Bir Plan Seç</h3>
+              <p>İsteklerine göre sana sunduğumuz 3 plandan birini seç.</p>
+            </div>
+            <div class="icon-box col-3">
+              <i class="far fa-smile fa-3x"></i>
+              <h3>İçeriklerin Keyfini Çıkar</h3>
+              <p>Her şey hazır.Şimdi arkana yaslan ve keyfine bak.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>
+              Tüm Filmleri ve TV Şovlarını yayınlandıktan hemen sonra izleyin!
+            </h3>
+            <p>Ülkemizde ve dünyada yayınlanan yüzlerce içeriğe anında ulaş.</p>
+            <a class="btn btn-secondary" href="#">View Features</a>
+          </div>
+        </div>
+      </section>
+      <section id="plans">
+        <h2 class="section-title">Premium Üye Ol</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 plan">
+              <div class="inner-plan">
+                <h2>Ücretsiz</h2>
+                <h3>0/ay</h3>
+                <ul class="plan__features">
+                  <li>HD kalite(720p)</li>
+                  <li>Sınırsız Film ve TV şovu</li>
+                  <li>Bilgisayarda izle</li>
+                  <li>İndir ve çevrimdışı izle</li>
+                  <li>İlk ay ücretsiz</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Planı Seç</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 plan plan--featured">
+              <div class="inner-plan recommended_plan">
+                <h2 class="plan__badge">Tavsiye edilen</h2>
+                <h2>Temel</h2>
+                <h3>30₺/ay</h3>
+                <ul class="plan__features">
+                  <li>Full HD(1080p)</li>
+                  <li>Sınırsız Film ve TV şovu</li>
+                  <li>Telefon tablet ve bilgisayarda izle</li>
+                  <li>İndir ve çevrimdışı izle</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Planı Seç</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 plan">
+              <div class="inner-plan">
+                <h2>Premium</h2>
+                <h3>60₺/ay</h3>
+                <ul class="plan__features">
+                  <li>Ultra HD(4K)</li>
+                  <li>Sınırsız Film ve TV şovu</li>
+                  <li>Telefon tablet ve bilgisayarda izle</li>
+                  <li>İndir ve çevrimdışı izle</li>
+                  <li>En yeni içeriklere anında ulaş</li>
+                </ul>
+                <div>
+                  <button class="btn btn-primary">Planı seç</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="counters">
+        <div class="row counter">
+          <div class="col-3">
+            <span class="counter__item">974</span>
+            <h4>Film</h4>
+          </div>
+          <div class="col-3">
+            <span class="counter__item">456</span>
+            <h4>Tv Şovları</h4>
+          </div>
+          <div class="col-3">
+            <span class="counter__item">2688</span>
+            <h4>Kullanıcılar</h4>
+          </div>
+        </div>
+      </section>
+      <section id="movies">
+        <h2 class="section-title">En Yeni Filmler ve TV Şovları</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 card-container">
+              <div class="card">
+                <img
+                  class="card-image img-fluid"
+                  src="img/batmann.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2>The Batman</h2>
+                  <p>
+                    The Batman, aynı adlı DC Comics karakterine dayanan 2022
+                    Amerikan süper kahraman filmidir. DC Films tarafından
+                    üretilen filmin dağıtımı Warner Bros. Pictures tarafından
+                    gerçekleştirildi.Yönetmenliğini Matt Reeves üstlenmektedir.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Detaylar</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-container">
+              <div class="card">
+                <img class="card-image img-fluid" src="img/bergen.jpg" alt="" />
+                <div class="card-body">
+                  <h2>Bergen</h2>
+                  <p>
+                    Senaryosunu Sema Kaygusuz ve Yıldız Bayazıt'ın kaleme
+                    aldığı, yönetmenliğini Mehmet Binay ve Caner Alper
+                    ikilisinin yaptığı, Farah Zeynep Abdullah'ın başrolünde yer
+                    aldığı biyografik ve dram türündeki Türk yapımı sinema
+                    filmi.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Details</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-container">
+              <div class="card">
+                <img
+                  class="card-image img-fluid"
+                  src="img/DR-STRANGE.jpg"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2>Doktor Strange 2</h2>
+                  <p>
+                    Hem eski hem de yeni mistik yol arkadaşlarının yardımıyla,
+                    gizemli yeni bir düşmanla yüzleşmek için Çoklu Evrenin
+                    akıllara durgunluk veren ve tehlikeli alternatif
+                    gerçekliklerini kat eden Doktor Strange ile bilinmeyene
+                    yolculuk başlıyor.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Details</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li><a href="#">Hakkında</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul id="social-links">
+              <li><a href="" class="fab fa-facebook"></a></li>
+              <li><a href="" class="fab fa-twitter"></a></li>
+              <li><a href="" class="fab fa-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+    <script>
+      function displayMenu() {
+        var link = document.getElementById("main-nav");
+        link.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>
